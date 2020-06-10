@@ -4,7 +4,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 // mongoose.connect(
-//   "mongodb+srv://BlogUser:Blog@9711@cluster0-vdapo.gcp.mongodb.net/AppDB?retryWrites=true&w=majority",
+//   "mongodb+srv://BlogUser:Blog@9711@cluster0-fc8do.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority",
 //   {
 //     useNewUrlParser: true,
 //     useCreateIndex: true,
