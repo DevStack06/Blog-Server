@@ -1,12 +1,10 @@
 ### The Backend code of the YouTube Series Blog app development from scratch using (Flutter, ExpressJS, NodeJS, MongoDB, Heroku, MongoDB Atlas) :smile: .
 
-### The YouTube Channle Link -: [Channle link](https://www.youtube.com/channel/UCE9YNto5Fc8u7DdOTuCm8rw?view_as=subscriber)
+#### The YouTube Channle Link -: [Channle link](https://www.youtube.com/channel/UCE9YNto5Fc8u7DdOTuCm8rw?view_as=subscriber)
 
 #### Mian Youtube Playlist Link-: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKoE2PBvgbHEBPAP-sd670VI)
 
 #### Only Backend Development part playlist -: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKqypuOtDhcXZ4oATJfji49r)
-
-#### Only UI Development part playlist -: [https://www.youtube.com/playlist?list=PLtIU0BH0pkKpitsp5jzt-yDAoXAFBkcPb)
 
 Before going to code make sure to install mongoDB database on your local system :sweat_smile: .For installing mongoDB you can take help from the [This video](https://www.youtube.com/watch?v=3Pol218EKcQ) .For this project I am using the [Mongoose](https://mongoosejs.com/).
 
@@ -21,7 +19,7 @@ Below are the some basic syntax for your help after installing the mongoDB.
 
 **Note -:Above codes are valid for linux only.For more info, you can follow the official mongoDB website :wink:**
 
-**Fork this repository and then clone it because after forking it you will be updated if i will change the code here:wink:**
+## **Fork this repository and then clone it because after forking it you will be updated if i will change the code here:wink:**
 
 ## **Back End Code**
 
