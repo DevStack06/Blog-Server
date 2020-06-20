@@ -71,7 +71,7 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 5. It will launch the server on [http://localhost:5000](http://localhost:5000) this url.
    **This localhost url is a base url you will need this while connecting your rest server with flutter app**
 
-#### If suppose at the same time working with Flutter , Node/Express, and MongoDB your system will be hang and wanted to host this rest server on heroku cloud(free). So you only need to bother about the flutter code then you can follow this step
+### If suppose at the same time working with Flutter , Node/Express, and MongoDB your system will be hang them you can host this rest server on heroku cloud(free). So you only need to bother about the flutter code.
 
 ### Remote Rest server setup
 
