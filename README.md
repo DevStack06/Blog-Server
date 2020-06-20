@@ -45,7 +45,7 @@ _**Fork this repository and then clone it because after forking it you will be u
 
 Or, else just clone this repository :sweat_smile:
 
-### A) To run the Rest Server on local system folow this steps-:
+### 1) To run the Rest Server on local system folow this steps-:
 
 1. For installing all the necessary npm packages-
 
@@ -73,13 +73,13 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 
 ### If suppose at the same time working with Flutter , Node/Express, and MongoDB your system will be hang them you can host this rest server on heroku cloud(free). So you only need to bother about the flutter code.
 
-### B) Remote Rest server setup
+### 2) Remote Rest server setup
 
 1. First you have to host your MongoDB database on MongoDb Atlas server(Free), for that follow this video [link](https://www.youtube.com/watch?v=8hYmtIi9Pfk&t=43s)
 2. Then deploy your NodeJs Rest Server on Heroku, for that follow this video [link](https://www.youtube.com/watch?v=_Cq5pQTIhWQ&t=1s)
 3. After that heroku will genrate a final endponits(url). That url will be base url for our flutter app.
 
-### C) Alternatively here is my base url for my flutter blog app. You can use it if you find any difficulty on above methods.
+### 3) Alternatively here is my base url for my flutter blog app. You can use it if you find any difficulty on above methods.
 
 Note-: If many person will use this url then there will be chance that my free hosting on MongoDB Atlas server exhausted. At that time I will delete some data from the server :sweat_smile:. So my humbel request is to craete your own dedicated rest server :sweat_smile:.
 
