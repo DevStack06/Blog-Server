@@ -45,7 +45,7 @@ _**Fork this repository and then clone it because after forking it you will be u
 
 Or, else just clone this repository :sweat_smile:
 
-### For executing the backend server you have to execute the following codes-:
+### To run the Rest Server on local system folow this steps-:
 
 1. For installing all the necessary npm packages-
 
