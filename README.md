@@ -83,6 +83,6 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 
 Note-: If many person will use this url then there will be chance that my free hosting on MongoDB Atlas server exhausted. At that time I will delete some data from the server :sweat_smile:. So my humbel request is to craete your own dedicated rest server :sweat_smile:.
 
-Link-
+Link- [https://sheltered-waters-80365.herokuapp.com/](https://sheltered-waters-80365.herokuapp.com/)
 
 **Note -: Make sure you Subscribed my YouTube channle also give star to this repository :sweat_smile:**
