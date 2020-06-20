@@ -75,11 +75,9 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 
 ### Remote Rest server setup
 
-1. Fork this repository
-2. Then pull the code on localsystem ( Use git pull origin master)
-3. First you have to host your MongoDB database on MongoDb Atlas server(Free), for that follow this video [link](https://www.youtube.com/watch?v=8hYmtIi9Pfk&t=43s)
-4. Then deploy your NodeJs Rest Server on Heroku, for that follow this video [link](https://www.youtube.com/watch?v=_Cq5pQTIhWQ&t=1s)
-5. After that heroku will genrate a final endponits(url). That url will be base url for our flutter app.
+1. First you have to host your MongoDB database on MongoDb Atlas server(Free), for that follow this video [link](https://www.youtube.com/watch?v=8hYmtIi9Pfk&t=43s)
+2. Then deploy your NodeJs Rest Server on Heroku, for that follow this video [link](https://www.youtube.com/watch?v=_Cq5pQTIhWQ&t=1s)
+3. After that heroku will genrate a final endponits(url). That url will be base url for our flutter app.
 
 ### Alternatively here is my base url for my flutter blog app. You can use it if you find any diffuclty on above methods.
 
