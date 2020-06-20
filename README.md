@@ -79,7 +79,7 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 2. Then deploy your NodeJs Rest Server on Heroku, for that follow this video [link](https://www.youtube.com/watch?v=_Cq5pQTIhWQ&t=1s)
 3. After that heroku will genrate a final endponits(url). That url will be base url for our flutter app.
 
-### Alternatively here is my base url for my flutter blog app. You can use it if you find any diffuclty on above methods.
+### Alternatively here is my base url for my flutter blog app. You can use it if you find any difficulty on above methods.
 
 Note-: If many person will use this url then there will be chance that my free hosting on MongoDB Atlas server exhausted. At that time I will delete some data from the server :sweat_smile:. So my humbel request is to craete your own dedicated rest server :sweat_smile:.
 
