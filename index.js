@@ -22,6 +22,14 @@ app.use(express.json());
 const userRoute = require("./routes/user");
 app.use("/user", userRoute);
 
-app.route("/").get((req, res) => res.json("hello world !"));
+data = {
+  msg: "Welcome on DevStack Blog App development YouTube video series",
+  info: "This is a root endpoint",
+  Working: "Documentations of other endpoints will be release soon :)",
+  request:
+    "Hey if you did'nt subscribed my YouTube channle please subscribe it [Subscribe kro yrrr :( ] ",
+};
+
+app.route("/").get((req, res) => res.json(data));
 
 app.listen(port, () => console.log(`welcome your listinnig at port ${port}`));
