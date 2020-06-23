@@ -14,16 +14,6 @@ router.route("/:username").get(middleware.checkToken, (req, res) => {
     });
   });
 });
-router.route("/checkUser/:username").get(middleware.checkToken, (req, res) => {
-  User.findOne({ username: req.params.username }, (err, result) => {
-    if (err) return res.status(500).json({ msg: err });
-    if (result === null) return res.json({ status: false });
-
-    return res.json({
-      status: true,
-    });
-  });
-});
 
 router.route("/login").post((req, res) => {
   User.findOne({ username: req.body.username }, (err, result) => {
