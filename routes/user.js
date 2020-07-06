@@ -62,7 +62,7 @@ router.route("/register").post((req, res) => {
     .save()
     .then(() => {
       console.log("user registered");
-      res.status(200).json("ok");
+      res.status(200).json({ msg: "User Successfully Registered" });
     })
     .catch((err) => {
       res.status(403).json({ msg: err });
