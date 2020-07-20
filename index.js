@@ -21,6 +21,8 @@ connection.once("open", () => {
 app.use(express.json());
 const userRoute = require("./routes/user");
 app.use("/user", userRoute);
+const profileRoute = require("./routes/profile");
+app.use("/profile", profileRoute);
 
 data = {
   msg: "Welcome on DevStack Blog App development YouTube video series",
