@@ -2,6 +2,56 @@ const express = require("express");
 const router = express.Router();
 const Profile=require("../models/profile.model");
 const middleware= require("../middleware");
+const multer = require("multer");
+const path = require("path");
+//multer configuration
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, "./uploads");
+      },
+      filename: (req, file, cb) => {
+        cb(null, req.decoded.username + ".jpg");
+      },
+}); 
+
+const fileFilter = (req, file, cb) => {
+    if (file.mimetype == "image/jpeg" || ile.mimetype == "image/png") {
+        cb(null, true);
+      } else {
+        cb(null, false);
+      }
+};
+
+const upload = multer({
+    storage:storage,
+    limits: {
+        fileSize: 1024 * 1024 * 6,
+      },
+      fileFilter:fileFilter,
+});
+
+//adding and update profile image
+router
+  .route("/add/image")
+  .patch( middleware.checkToken,upload.single("img"),async (req, res) => {
+    await Profile.findOneAndUpdate(
+        { username: req.decoded.username },
+        {
+          $set: {
+            img: req.file.path,
+          },
+        },
+        { new: true },
+        (err, profile) => {
+        if (err) return res.status(500).send(err);
+        const response = {
+          message: "image added successfully updated",
+          data: profile,
+        };
+        return res.status(200).send(response);
+      }
+        );
+  });
 
 router.route("/add").post(middleware.checkToken,(req,res)=>{
 const profile = Profile({

@@ -18,6 +18,7 @@ connection.once("open", () => {
 });
 
 //middleware
+app.use("/uploads",express.static("uploads"));
 app.use(express.json());
 const userRoute = require("./routes/user");
 app.use("/user", userRoute);
