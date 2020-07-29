@@ -6,6 +6,8 @@
 
 #### Only Backend Development part playlist -: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKqypuOtDhcXZ4oATJfji49r)
 
+#### Rest API Documenatation [Link](https://documenter.getpostman.com/view/10970931/T17GgTfe)
+
 Before going to code make sure to install mongoDB database on your local system :sweat_smile: .For installing mongoDB you can take help from the [This video](https://www.youtube.com/watch?v=3Pol218EKcQ) .For this project I am using the [Mongoose](https://mongoosejs.com/).
 
 Below are the some basic syntax for your help after installing the mongoDB.
