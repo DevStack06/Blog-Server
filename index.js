@@ -18,7 +18,7 @@ connection.once("open", () => {
 });
 
 //middleware
-app.use("/uploads",express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 const userRoute = require("./routes/user");
 app.use("/user", userRoute);
@@ -35,4 +35,6 @@ data = {
 
 app.route("/").get((req, res) => res.json(data));
 
-app.listen(port, () => console.log(`welcome your listinnig at port ${port}`));
+app.listen(port, "0.0.0.0", () =>
+  console.log(`welcome your listinnig at port ${port}`)
+);
