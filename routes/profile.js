@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 });
 
 const fileFilter = (req, file, cb) => {
-  if (file.mimetype == "image/jpeg" || ile.mimetype == "image/png") {
+  if (file.mimetype == "image/jpeg" || file.mimetype == "image/png") {
     cb(null, true);
   } else {
     cb(null, false);
@@ -28,14 +28,14 @@ const upload = multer({
   limits: {
     fileSize: 1024 * 1024 * 6,
   },
-  fileFilter: fileFilter,
+  // fileFilter: fileFilter,
 });
 
 //adding and update profile image
 router
   .route("/add/image")
-  .patch(middleware.checkToken, upload.single("img"), async (req, res) => {
-    await Profile.findOneAndUpdate(
+  .patch(middleware.checkToken, upload.single("img"), (req, res) => {
+    Profile.findOneAndUpdate(
       { username: req.decoded.username },
       {
         $set: {
