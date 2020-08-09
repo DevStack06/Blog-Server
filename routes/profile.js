@@ -85,5 +85,42 @@ router.route("/checkProfile").get(middleware.checkToken, (req, res) => {
     }
   });
 });
-
+router.route("/getData").get(middleware.checkToken, (req, res) => {
+  Profile.findOne({ username: req.decoded.username }, (err, result) => {
+    if (err) return res.json({ err: err });
+    if (result == null) return res.json({ data: [] });
+    else return res.json({ data: result });
+  });
+});
+router.route("/update").patch(middleware.checkToken, async (req, res) => {
+  let profile = {};
+  await Profile.findOne({ username: req.decoded.username }, (err, result) => {
+    if (err) {
+      profile = {};
+    }
+    if (result != null) {
+      profile = result;
+    }
+  });
+  Profile.findOneAndUpdate(
+    { username: req.decoded.username },
+    {
+      $set: {
+        name: req.body.name ? req.body.name : profile.name,
+        profession: req.body.profession
+          ? req.body.profession
+          : profile.profession,
+        DOB: req.body.DOB ? req.body.DOB : profile.DOB,
+        titleline: req.body.titleline ? req.body.titleline : profile.titleline,
+        about: req.body.about ? req.body.about : profile.about, //about:""
+      },
+    },
+    { new: true },
+    (err, result) => {
+      if (err) return res.json({ err: err });
+      if (result == null) return res.json({ data: [] });
+      else return res.json({ data: result });
+    }
+  );
+});
 module.exports = router;

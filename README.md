@@ -1,6 +1,6 @@
 ### The Backend code of the YouTube Series Blog app development from scratch using (Flutter, ExpressJS, NodeJS, MongoDB, Heroku, MongoDB Atlas) :smile: .
 
-#### The YouTube Channle Link -: [Channle link](https://www.youtube.com/channel/UCE9YNto5Fc8u7DdOTuCm8rw?view_as=subscriber)
+#### The YouTube Channle Link -: [Channle link](http://www.youtube.com/c/DevStack)
 
 #### Mian Youtube Playlist Link-: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKoE2PBvgbHEBPAP-sd670VI)
 
