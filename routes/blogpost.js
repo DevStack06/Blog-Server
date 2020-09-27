@@ -16,11 +16,4 @@ router.route("/Add").post(middleware.checkToken, (req, res) => {
   });
 });
 
-const upload = multer({
-  storage: storage,
-  limits: {
-    fileSize: 1024 * 1024 * 6,
-  },
-  // fileFilter: fileFilter,
-});
 module.exports = router;
