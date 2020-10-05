@@ -4,8 +4,6 @@ const Profile = require("../models/profile.model");
 const middleware = require("../middleware");
 const multer = require("multer");
 const path = require("path");
-// const { profile } = require("console");
-//multer configuration
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "./uploads");
