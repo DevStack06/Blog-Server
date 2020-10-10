@@ -57,4 +57,27 @@ router.route("/getOwnBlog").get(middleware.checkToken, (req, res) => {
   });
 });
 
+router.route("/getOtherBlog").get(middleware.checkToken, (req, res) => {
+  BlogPost.find({ username: { $ne: req.decoded.username } }, (err, result) => {
+    if (err) return res.json(err);
+    return res.json({ data: result });
+  });
+});
+
+router.route("/delete/:id").delete(middleware.checkToken, (req, res) => {
+  BlogPost.findOneAndDelete(
+    {
+      $and: [{ username: req.decoded.username }, { _id: req.params.id }],
+    },
+    (err, result) => {
+      if (err) return res.json(err);
+      else if (result) {
+        console.log(result);
+        return res.json("Blog deleted");
+      }
+      return res.json("Blog not deleted");
+    }
+  );
+});
+
 module.exports = router;
