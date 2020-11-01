@@ -43,11 +43,14 @@ router.route("/Add").post(middleware.checkToken, (req, res) => {
     title: req.body.title,
     body: req.body.body,
   });
-  blogpost.save().then((result) => {
-    res.json({ data: result }).cathch((err) => {
+  blogpost
+    .save()
+    .then((result) => {
+      res.json({ data: result["_id"] });
+    })
+    .catch((err) => {
       console.log(err), res.json({ err: err });
     });
-  });
 });
 
 router.route("/getOwnBlog").get(middleware.checkToken, (req, res) => {
