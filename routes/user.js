@@ -67,7 +67,8 @@ router.route("/register").post((req, res) => {
     });
 });
 
-router.route("/update/:username").patch(middleware.checkToken, (req, res) => {
+router.route("/update/:username").patch((req, res) => {
+  console.log(req.params.username);
   User.findOneAndUpdate(
     { username: req.params.username },
     { $set: { password: req.body.password } },
