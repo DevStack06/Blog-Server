@@ -1,14 +1,33 @@
 ### The Backend code of the YouTube Series Blog app development from scratch using (Flutter, ExpressJS, NodeJS, MongoDB, Heroku, MongoDB Atlas) :smile: .
 
-#### The YouTube Channle Link -: [Channle link](http://www.youtube.com/c/DevStack)
+## Playlist Links:-
 
-#### Mian Youtube Playlist Link-: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKoE2PBvgbHEBPAP-sd670VI)
+| Playlist Name                                             |     | YouTube Playlist Link                                                                       |
+| --------------------------------------------------------- | --- | ------------------------------------------------------------------------------------------- |
+| Blog App Development (Main Playlist)                      |     | [Link](https://youtube.com/playlist?list=PLtIU0BH0pkKoE2PBvgbHEBPAP-sd670VI)                |
+| Blog App Development (Only Front-End using Flutter)       |     | [Link](https://www.youtube.com/watch?v=6VCLeHRnixg&list=PLtIU0BH0pkKpitsp5jzt-yDAoXAFBkcPb) |
+| Blog App Development (Only Back-End using Node/ExpressJs) |     | [Link](https://www.youtube.com/watch?v=T35T8nzyRDI&list=PLtIU0BH0pkKqypuOtDhcXZ4oATJfji49r) |
 
-#### Only Backend Development part playlist -: [Playlist Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKqypuOtDhcXZ4oATJfji49r)
+## Resource Link :-
 
-#### Rest API Documenatation [Link](https://documenter.getpostman.com/view/10970931/T17GgTfe)
+| Name                                        |     | Link                                                             |
+| ------------------------------------------- | --- | ---------------------------------------------------------------- |
+| Rest API Official Documenatation on Postman |     | [Link](https://documenter.getpostman.com/view/10970931/T17GgTfe) |
+
+## Some Other playlist
+
+| Playlist Name                                                        |     | YouTube Playlist Link                                                            |
+| -------------------------------------------------------------------- | --- | -------------------------------------------------------------------------------- |
+| Flutter model class series, for Rest API connection and JSON parsing |     | [Link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKpXE-1vC7NswofFPby1OYh-) |
+| Flutter Basic series                                                 |     | [link](https://www.youtube.com/playlist?list=PLtIU0BH0pkKrk8C7KToFeRSVTi2CLpFTG) |
+
+**Note -: Make sure you Subscribed my YouTube channle also give star to this repository :sweat_smile:**
+
+## Prerequisite check:-
 
 Before going to code make sure to install mongoDB database on your local system :sweat_smile: .For installing mongoDB you can take help from the [This video](https://www.youtube.com/watch?v=3Pol218EKcQ) .For this project I am using the [Mongoose](https://mongoosejs.com/).
+
+## Helful Steps :-
 
 Below are the some basic syntax for your help after installing the mongoDB.
 
@@ -86,5 +105,3 @@ mongoose.connect("mongodb://localhost:27017/blogDB", {
 Note-: If many person will use this url then there will be chance that my free hosting on MongoDB Atlas server exhausted. At that time I will delete some data from the server :sweat_smile:. So my humbel request is to craete your own dedicated rest server :sweat_smile:.
 
 Link- [https://sheltered-waters-80365.herokuapp.com/](https://sheltered-waters-80365.herokuapp.com/)
-
-**Note -: Make sure you Subscribed my YouTube channle also give star to this repository :sweat_smile:**
